@@ -44,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
 
+                /*
+                http://scienti.colciencias.gov.co:8081/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001376707
+                http://scienti.colciencias.gov.co:8081/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000787132
+                 */
+
                 Investigador investigador = ExtraerDatoCVLAC.getDatos("http://scienti.colciencias.gov.co:8081/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000733180");
                 adicionarDatosCasillasTexto(investigador);
 
